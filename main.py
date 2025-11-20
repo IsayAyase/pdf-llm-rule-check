@@ -1,6 +1,7 @@
 from fastapi import FastAPI, APIRouter
-from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from routers import check
+import os
 
 app = FastAPI()
 
@@ -11,12 +12,15 @@ router.include_router(check.router)
 
 app.include_router(router)
 
+app.mount("/", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "client")))
+
 @app.get("/")
 async def index():
-    with open("client/index.html", "r") as f:
-        html_content = f.read()
-    return HTMLResponse(content=html_content, status_code=200)
+    return {
+        "msg": "Welcome to Pdf Rules Checker"
+    }
 
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+

@@ -80,3 +80,6 @@ python main.py
 (Or `python3 main.py` depending on your system.)
 
 ---
+
+If everythings goes well, project should be live in port 8000
+<a href="http://localhost:8000/index.html">http://localhost:8000/index.html</a>
