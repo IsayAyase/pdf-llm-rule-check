@@ -1,0 +1,101 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[co]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs
+dist
+downloads
+eggs
+.eggs
+lib64
+*.egg-info
+*.whl
+*.wheel
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.exe
+
+# Logs
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+*.sqlite
+*.sqlite3
+localstorage.rdf
+webappsstore.sqlite
+
+# Tests
+.tox
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py[co]
+.hypothes
+.pytest_cache
+
+# Translations
+*.mo
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+*.log
+*.pyc
+*.pyo
+*.egg
+*.egg-info
+*.whl
+*.whl
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# Sphinx documentation
+docs/_build
+
+# PyBuilder
+target
+
+# Jupyter Notebook
+.ipynb_checkpoints
+.ipynb_files_checkpoints
+
+# pyrever
+.reverter
+
+# Pycodestyle
+*.pyc
+
+# mypy
+.mypy_cache
+
+# pytest
+.cache
+*.cache
+.pytest_cache
+.venv
